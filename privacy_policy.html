@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns#">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:description" content="" />
+    <meta property="fb:app_id" content="">
+    <title>OffGridLab</title>
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PJLQ9VQ');
+    </script>
+    <!-- End Google Tag Manager -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
+    <!-- CSS読込 -->
+    <!-- <link rel="stylesheet" href="assets/css/normalize.css"> -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/pagetop.css">
+    <link href="js/slick.css" rel="stylesheet" type="text/css">
+    <link href="js/slick-theme.css" rel="stylesheet" type="text/css">
+    <!-- Base CSS -->
+    <link rel="stylesheet" href="css/base.css">
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- フォントオーサム -->
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <!-- ファビコン読込 -->
+    <link rel="shortcut icon" href="img/favicon.ico" />
+
+    <!-- Animation Libraries -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <meta http-equiv="imagetoolbar" content="no">
+    <!-- 検索有無設定 -->
+    <!-- jquery読込 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/easy-rollover.js"></script>
+    <script src="https://use.typekit.net/zzb5mon.js"></script>
+    <script src="js/modernizr-2.8.3.min.js"></script>
+    <script>
+        try {
+            Typekit.load({
+                async: true
+            });
+        } catch (e) {}
+    </script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/modal.js"></script>
+    <script type="text/javascript" src="js/base-color.js"></script>
+    <script src="https://ajaxzip3.github.io/ajaxzip3.js"></script>
+
+    <script type="text/javascript" src="js/jquery.easeScroll.js"></script>
+    <!-- スムーススクロール -->
+    <script type="text/javascript">
+        $(function () {
+            $('a[href^="#"]').on('click', function () {
+                var speed = 1000;
+                var href = $(this).attr('href');
+                var target = $(href == '#' || href == '' ? 'html' : href);
+                var position = target.offset().top;
+                $('body,html').animate({
+                    scrollTop: position
+                }, speed, 'swing');
+                return false;
+            });
+        });
+    </script>
+
+    <style id='base_val' type='text/css'></style>
+
+    <style type='text/css'>
+        table {
+            margin: auto;
+        }
+
+        /*表示切替*/
+        html body .view_pc {
+            display: block !important;
+        }
+
+        html body table.view_pc {
+            display: table !important;
+        }
+
+        html body table.view_pc tr {
+            display: table !important;
+        }
+
+        html body table.view_pc th {
+            display: table !important;
+        }
+
+        html body table.view_pc td {
+            display: table !important;
+        }
+
+        html body .view_pctab {
+            display: block !important;
+        }
+
+        html body table.view_pctab {
+            display: table !important;
+        }
+
+        html body table.view_pctab tr {
+            display: table !important;
+        }
+
+        html body table.view_pctab th {
+            display: table !important;
+        }
+
+        html body table.view_pctab td {
+            display: table !important;
+        }
+
+        html body .view_tab {
+            display: none !important;
+        }
+
+        html body .view_sp {
+            display: none !important;
+        }
+
+        html body .view_tabsp {
+            display: none !important;
+        }
+
+        @media only screen and (max-width: 1050px) {
+            html body .view_pc {
+                display: none !important;
+            }
+
+            html body .view_pctab {
+                display: block !important;
+            }
+
+            html body table.view_pctab {
+                display: table !important;
+            }
+
+            html body table.view_pctab tr {
+                display: table !important;
+            }
+
+            html body table.view_pctab th {
+                display: table !important;
+            }
+
+            html body table.view_pctab td {
+                display: table !important;
+            }
+
+            html body .view_tab {
+                display: block !important;
+            }
+
+            html body table.view_tab {
+                display: table !important;
+            }
+
+            html body table.view_tab tr {
+                display: table !important;
+            }
+
+            html body table.view_tab th {
+                display: table !important;
+            }
+
+            html body table.view_tab td {
+                display: table !important;
+            }
+
+            html body .view_sp {
+                display: none !important;
+            }
+
+            html body .view_tabsp {
+                display: block !important;
+            }
+
+            html body table.view_tabsp {
+                display: table !important;
+            }
+
+            html body table.view_tabsp tr {
+                display: table !important;
+            }
+
+            html body table.view_tabsp th {
+                display: table !important;
+            }
+
+            html body table.view_tabsp td {
+                display: table !important;
+            }
+        }
+
+        @media only screen and (max-width: 770px) {
+            html body .view_pc {
+                display: none !important;
+            }
+
+            html body .view_pctab {
+                display: none !important;
+            }
+
+            html body .view_tab {
+                display: none !important;
+            }
+
+            html body .view_sp {
+                display: block !important;
+            }
+
+            html body table.view_sp {
+                display: table !important;
+            }
+
+            html body table.view_sp tr {
+                display: table !important;
+            }
+
+            html body table.view_sp th {
+                display: table !important;
+            }
+
+            html body table.view_sp td {
+                display: table !important;
+            }
+
+            html body .view_tabsp {
+                display: block !important;
+            }
+
+            html body table.view_tabsp {
+                display: table !important;
+            }
+
+            html body table.view_tabsp tr {
+                display: table !important;
+            }
+
+            html body table.view_tabsp th {
+                display: table !important;
+            }
+
+            html body table.view_tabsp td {
+                display: table !important;
+            }
+        }
+
+        /* エラーメッセージ　赤文字設定 */
+        .error_msg {
+            color: #ff2e5a !important;
+        }
+    </style>
+
+    <style type='text/css'>
+        @font-face {
+            font-family: 'noto_regular';
+            src: url(assets/css/fonts/NotoSansCJKjp-Regular.otf);
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'noto_medium';
+            src: url(assets/css/fonts/NotoSansCJKjp-Medium.otf);
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'noto_bold';
+            src: url(assets/css/fonts/NotoSansCJKjp-Bold.otf);
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'noto_black';
+            src: url(assets/css/fonts/NotoSansCJKjp-Black.otf);
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'noto_demilight';
+            src: url(assets/css/fonts/NotoSansCJKjp-DemiLight.otf);
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'mont_light_italic';
+            src: url(assets/css/fonts/Montserrat-LightItalic.ttf);
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'mont_italic';
+            src: url(assets/css/fonts/Montserrat-Italic.ttf);
+            font-style: normal;
+        }
+
+        .noto_regular {
+            font-family: 'noto_regular';
+        }
+
+        .noto_medium {
+            font-family: 'noto_medium';
+        }
+
+        .noto_bold {
+            font-family: 'noto_bold';
+        }
+
+        .noto_black {
+            font-family: 'noto_black';
+        }
+
+        .noto_demilight {
+            font-family: 'noto_demilight';
+        }
+
+        .mont_light_italic {
+            font-family: 'mont_light_italic';
+        }
+
+        .mont_italic {
+            font-family: 'mont_italic';
+        }
+
+        .noto_regular {
+            font-family: 'noto_regular';
+        }
+
+        .noto_medium {
+            font-family: 'noto_medium';
+        }
+
+        .noto_bold {
+            font-family: 'noto_bold';
+        }
+
+        .noto_black {
+            font-family: 'noto_black';
+        }
+
+        .noto_demilight {
+            font-family: 'noto_demilight';
+        }
+
+        .mont_light_italic {
+            font-family: 'mont_light_italic';
+        }
+
+        .flex_start {
+            align-items: flex-start;
+        }
+
+        .inline_block {
+            display: inline-block;
+        }
+
+        .mg_auto {
+            margin: 0 auto;
+        }
+
+        .txt_mg_0 {
+            margin: 0;
+        }
+
+        .txt_p_0 {
+            padding: 0;
+        }
+
+        .txt_pd_l_foot {
+            padding-left: 1.1vw;
+        }
+
+        .txt_deco {
+            text-decoration: none;
+        }
+
+        .bg_wht_grey {
+            background-color: #f5f5f5;
+        }
+
+        .u_line_d_grey {
+            border-bottom: solid 1px #475160;
+        }
+
+        .u_line_top_d_grey {
+            border-top: solid 1px #475160;
+        }
+
+        .u_line_right_d_grey {
+            border-right: solid 2px #475160;
+        }
+
+        .undrag {
+            user-drag: none;
+            user-select: none;
+            -moz-user-select: none;
+            -webkit-user-drag: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+        }
+
+        .txt_main_color {
+            color: #25664a;
+        }
+
+        .relative {
+            position: relative;
+        }
+
+        .section_7 .view_pc p {
+            color: #25664a;
+            font-size: 1.25vw;
+            font-family: 'noto_demilight';
+        }
+
+        .section_7 .view_tabsp p {
+            color: #000;
+            font-size: 4vw !important;
+            font-family: 'noto_demilight';
+        }
+
+        #display_none {
+            display: none !important;
+        }
+    </style>
+
+
+    <link rel="stylesheet" href="css/sp.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <!-- PC -->
+        <div class="view_pc">
+            <div class="width_100 relative txt_tpad_1 txt_bpad_1">
+                <div class="cont_wrapper_65 flex flex_center" style="justify-content: space-between;">
+                    <div class="width_14">
+                        <a href="index.html" class="" style="display: block;">
+                            <div class="width_100 mg_auto">
+                                <img src="img/top_logo.png" alt="Off Grid Lab" class="fix_zoom undrag">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="width_65">
+                        <div class="width_93 mg_auto flex flex_center">
+                            <div class="flex flex_center">
+                                <a href="../#企業理念" style="display: block;">
+                                    <p class="noto_regular txt_mg_0 font_75 txt_tpad_05 txt_bpad_05 txt_main_color">
+                                        企業理念 <span class="txt_lpad_1">／</span>
+                                    </p>
+                                </a>
+                            </div>
+
+                            <div class="flex flex_center">
+                                <a href="../#事業内容" style="display: block;">
+                                    <p class="noto_regular txt_mg_0 font_75 txt_tpad_05 txt_bpad_05 txt_main_color">
+                                        事業内容 <span class="txt_lpad_1">／</span></p>
+                                </a>
+                            </div>
+
+                            <div class="flex flex_center">
+                                <a href="../#SDGsへの取り組み" style="display: block;">
+                                    <p class="noto_regular txt_mg_0 font_75 txt_tpad_05 txt_bpad_05 txt_main_color">
+                                        SDGｓ<span class="txt_lpad_1">／</span></p>
+                                </a>
+                            </div>
+
+                            <div class="flex flex_center">
+                                <a href="../#代表挨拶" style="display: block;">
+                                    <p class="noto_regular txt_mg_0 font_75 txt_tpad_05 txt_bpad_05 txt_main_color">
+                                        代表挨拶 <span class="txt_lpad_1">／</span></p>
+                                </a>
+                            </div>
+
+                            <div class="flex flex_center">
+                                <a href="../#会社概要" style="display: block;">
+                                    <p class="noto_regular txt_mg_0 font_75 txt_tpad_05 txt_bpad_05 txt_main_color">
+                                        会社概要 <span class="txt_lpad_1">／</span></p>
+                                </a>
+                            </div>
+
+                            <div class="flex flex_center">
+                                <a href="contact-form.php" style="display: block;">
+                                    <p class="noto_regular txt_mg_0 font_75 txt_tpad_05 txt_bpad_05 txt_main_color">
+                                        お問い合わせ</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- MOBILE -->
+        <div class="view_tabsp fixed_top" style=" z-index: 1000000; border-bottom: 2px solid #CCCCCC;">
+            <div class="bg_white">
+                <div class="cont_wrapper_65 flex flex_center txt_tpad_2 txt_bpad_2">
+                    <div class="width_50 mg_auto flex flex_center">
+                        <a href="index.html" class="width_95 mg_auto">
+                            <img class="fix_zoom" src="img/top_logo.png" alt="Off Grid Lab">
+                        </a>
+                    </div>
+                    <div class="width_10">
+                    </div>
+
+                    <div class="width_28">
+                    </div>
+
+                    <!-- Hamburger Menu -->
+                    <div class="width_10 mg_auto">
+
+                        <div class="width_100 relative txt_center button_container block flex flex_center" id="toggle"
+                            style=" z-index:152;">
+                            <span class="top width_100 mg_auto"></span>
+                            <span class="middle width_100 mg_auto"></span>
+                            <span class="bottom width_100 mg_auto"></span>
+                            <div class="nav_menu"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Overlay Menu Open -->
+            <div class="overlay" id="overlay" style="z-index:150; overflow-y: scroll; height: 100vh !important;">
+                <nav class="overlay-menu">
+                    <ul class="width_100 mg_auto flex flex_center">
+                        <li class="width_100 mg_auto" style="border-bottom: 2px solid #CCCCCC;">
+                            <div class="space_1"></div>
+                            <a class="width_95 mg_auto font_100 txt_tpad_1 txt_bpad_1 block txt_center"
+                                onclick="close_menu();" href="#企業理念"><span class="noto_medium font_125 white"
+                                    style="letter-spacing: 10px;">企業理念</span></a>
+                            <div class="space_1"></div>
+                        </li>
+                        <li class="width_100 mg_auto" style="border-bottom: 2px solid #CCCCCC;">
+                            <div class="space_1"></div>
+                            <a class="width_95 mg_auto font_100 txt_tpad_1 txt_bpad_1 block txt_center"
+                                onclick="close_menu();" href="#事業内容"><span class="noto_medium font_125 white"
+                                    style="letter-spacing: 10px;">事業内容</span></a>
+                            <div class="space_1"></div>
+                        </li>
+                        <li class="width_100 mg_auto" style="border-bottom: 2px solid #CCCCCC;">
+                            <div class="space_1"></div>
+                            <a class="width_95 mg_auto font_100 txt_tpad_1 txt_bpad_1 block txt_center bold"
+                                onclick="close_menu();" href="#SDGsへの取り組み"><span class="font_125 white noto_medium"
+                                    style="letter-spacing: 10px;">SDGｓ</span></a>
+                            <div class="space_1"></div>
+                        </li>
+                        <li class="width_100 mg_auto" style="border-bottom: 2px solid #CCCCCC;">
+                            <div class="space_1"></div>
+                            <a class="width_95 mg_auto font_100 txt_tpad_1 txt_bpad_1 block txt_center"
+                                onclick="close_menu();" href="#代表挨拶"><span class="font_125 white noto_medium"
+                                    style="letter-spacing: 10px;">代表挨拶</span></a>
+                            <div class="space_1"></div>
+                        </li>
+                        <li class="width_100 mg_auto" style="border-bottom: 2px solid #CCCCCC;">
+                            <div class="space_1"></div>
+                            <a class="width_95 mg_auto font_100 txt_tpad_1 txt_bpad_1 block txt_center"
+                                onclick="close_menu();" href="#会社概要"><span class="noto_medium font_125 white"
+                                    style="letter-spacing: 10px;">会社概要</span></a>
+                            <div class="space_1"></div>
+                        </li>
+                        <li class="width_100 mg_auto" style="border-bottom: 2px solid #CCCCCC;">
+                            <div class="space_1"></div>
+                            <a class="width_95 mg_auto font_100 txt_tpad_1 txt_bpad_1 block txt_center"
+                                href="contact-form.php"><span class="noto_medium font_125 white"
+                                    style="letter-spacing: 10px;">お問い合わせ</span></a>
+                            <div class="space_1"></div>
+                        </li>
+
+                    </ul>
+
+                </nav>
+            </div>
+
+
+        </div>
+    </header>
+
+    <main style="background-color: #f3f3f3;">
+
+        <!-- Section 1 Banner -->
+        <section id="section_1">
+            <!-- PC -->
+            <div class="view_pc">
+                <img class="fix_zoom undrag" src="img/sect_1/banner.png" alt="">
+                <div class="cont_wrapper_65">
+                </div>
+            </div>
+            <!-- SP -->
+            <div class="view_tabsp">
+                <div class="width_100" style="margin-top: 7vw;">
+                    <img class="fix_zoom undrag" src="img/sect_1/banner_sp.png" alt="">
+                </div>
+                <div class="cont_wrapper_65">
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2 -->
+        <section id="section_2">
+            <div class="cont_wrapper_65">
+                <!-- Space -->
+                <div class="space_5"></div>
+                <h3 class="noto_demilight font_100 txt_left">個人情報保護方針</h3>
+                <p class="noto_demilight font_100 txt_left">
+                    株式会社オフグリッドラボ（以下、当社といいます。）は、<span
+                        class="red noto_demilight
+                            font_100">再生可能エネルギー有効利用システムの開発から販売・運用までを行っております。</span>これらの事業推進に伴い、個人情報を適切に保護し、個人の権利及び利益を確保することを重要な社会的責務と考えております。当社は、以下に掲げる当社自らの個人情報保護規律を規範とし、それを実践するための体制を確立し、当社の事業遂行の中において堅固な保護・管理体制を定着させることを宣言いたします。
+                </p>
+                <!-- Space -->
+                <div class="space_2"></div>
+                <p class="noto_demilight font_100 txt_left">2021年7月1日制定<br>
+                    株式会社オフグリッドラボ<br>
+                    代表取締役社長　猪又將哲</p>
+                <!-- Space -->
+                <div class="space_2"></div>
+                <p class="noto_demilight font_100 txt_left">
+                    １．個人情報の取得･利用･提供等について<br>
+                    ①個人情報を取得する際は、その利用目的をできる限り明確に特定し、その目的達成に必要な限度において適法かつ公正な手段を用い、同意を得て取得します。<br>
+                    ②個人情報を利用する際は、本人に明示、通知、または公表した利用目的の範囲内に限定し、それに反する目的外利用を行なわないための措置を講じます。<br>
+                    ③個人情報を第三者に提供またはその取扱いを委託する際は、本人が同意を与えた利用目的の範囲内で、適法にこれを行います。</p>
+                <!-- Space -->
+                <div class="space_2"></div>
+                <p class="noto_demilight font_100 txt_left">
+                    ２．安全対策の実施について<br>
+                    個人情報の正確性およびその利用の安全性を確保するため、情報セキュリティ対策を始めとする安全措置を構築し、個人情報への不正アクセス、個人情報の漏洩、滅失または毀損等の的確な防止とセキュリティの是正に努めます。
+                </p>
+                <!-- Space -->
+                <div class="space_2"></div>
+                <p class="noto_demilight font_100 txt_left">
+                    ３．苦情および相談等に対する適正な対応について<br>
+                    本人からの苦情および相談があった場合には、適切かつ迅速に対応いたします。また、個人情報を提供された本人の権利を尊重し、本人から自己情報の開示、訂正、削除、または利用もしくは提供の停止等を求められたときは、適法かつ遅滞なく応じます。
+                </p>
+                <!-- Space -->
+                <div class="space_2"></div>
+                <p class="noto_demilight font_100 txt_left">
+                    ４．法令・指針・規範の遵守について<br>
+                    適正な個人情報保護の実現のため、個人情報の取扱いに関する法令､国が定める指針および、その他の規範を遵守します。
+                </p>
+                <!-- Space -->
+                <div class="space_2"></div>
+                <p class="noto_demilight font_100 txt_left">
+                    ５．個人情報保護マネジメントシステムの継続的改善について<br>
+                    個人情報保護マネジメントシステムの運用状況について定期的に監査し、それを維持し、継続的に改善し、個人情報の保護水準の向上を図ります。<br>
+                    個人情報に関するお問合わせ窓口
+                    株式会社オフグリッドラボ　 個人情報保護担当
+                    Ｅ-mail : info(半角英数字でアットマークを入力) offgrid-lab.co.jp
+                </p>
+                <!-- Space -->
+                <div class="space_2"></div>
+                <h3 class="noto_demilight font_100 txt_left">個人情報の取り扱いについて</h3>
+                <!-- Space -->
+                <div class="space_2"></div>
+                <p class="noto_demilight font_100 txt_left">
+                    １．事業者の名称<br>
+                    株式会社オフグリッドラボ
+                </p>
+                <!-- Space -->
+                <div class="space_2"></div>
+                <p class="noto_demilight font_100 txt_left">
+                    ２．個人情報保護管理責任者の所属及び連絡先<br>
+                    当社は、当社における個人情報を適切に管理する責任者及び担当者として、以下の者を指名します。<br>
+                    個人情報保護管理責任者　 代表取締役社長
+                    個人情報に関するお問合わせ窓口　 代表取締役社長
+                    連絡先:　 東京都港区芝大門2丁目10番12号 KDX芝大門ビル2階
+                </p>
+                <!-- Space -->
+                <div class="space_2"></div>
+                <p class="noto_demilight font_100 txt_left">
+                    ３．個人情報の利用目的<br>
+                    当社は、法令で認められる場合を除き、以下の利用目的のために個人情報を取り扱います。<br>
+                    （１）お客様情報<br>
+                    当社製品・サービスのお申込み受付時等の本人確認・家族確認のため
+                    当社の製品・サービス・キャンペーン・イベント等のご案内（業務提携先のサービス等に関するご案内を含みます。）、ご注文品・景品等の発送、抽選・アンケート等の実施のため
+                    当社製品・サービスの効果測定・品質改善・新サービス企画のため
+                    ご意見・ご要望・苦情・お問い合わせ等への対応のため
+                    その他、上記に付随・関連する業務のため<br>
+                    （２）役員・従業員・採用応募者情報<br>
+                    採用業務（会社説明会の開催、アンケートの実施、採用選考等）のため
+                    人事管理業務（勤怠・人事評価、給与支払、健康管理、社会保険等の公的手続等）のため
+                    法令に基づく役員・従業員管理のため
+                    その他、上記に付随・関連する業務のため
+                </p>
+                <!-- Space -->
+                <div class="space_2"></div>
+                <p class="noto_demilight font_100 txt_left">
+                    ４．個人情報の取り扱い業務の委託・受託<br>
+                    （１）当社は、業務の一部を外部に委託しており、業務委託先に個人情報を預ける場合があります。この場合には、個人情報を適切に取り扱っていると認められる委託先を選定し、契約等において個人情報の適性管理・機密保持などを義務付け、個人情報の漏洩防止のための適切な管理を実施します。<br>
+                    （２）当社は、外部からの受託等で個人情報を間接的に取得する場合、取得する個人情報について、委託元において適切に取得されたものであるかを委託元へ確認し、契約上でその旨の保証を表明させたうえで取得するものとし、法令等を遵守して取り扱うものとします。
+                </p>
+                <!-- Space -->
+                <div class="space_2"></div>
+                <p class="noto_demilight font_100 txt_left">
+                    ５．個人情報の第三者提供<br>
+                    当社は、次に掲げる場合を除き、個人情報を第三者に提供することはありません。<br>
+                    ① ご本人の同意がある場合<br>
+                    ② 法令に基づく場合<br>
+                    ③ 人の生命、身体又は財産の保護のために必要がある場合であって、ご本人の同意を得ることが困難な場合<br>
+                    ④ 公衆衛生の向上又は児童の健全な育成の推進のために特に必要がある場合であって、ご本人の同意を得ることが困難であるとき<br>
+                    ⑤
+                    国の機関若しくは地方公共団体又はその委託を受けた者が法令の定める事務を遂行することに対して協力する必要がある場合であって、ご本人の同意を得ることによって当該事務の遂行に支障を及ぼすおそれがあるとき
+                </p>
+                <!-- Space -->
+                <div class="space_2"></div>
+                <p class="noto_demilight font_100 txt_left">
+                    ６．個人情報提供の任意性<br>
+                    当社に対する個人情報の提供はご本人の任意です。ただし、個人情報を提供いただけない場合は、サービス提供や当社の業務が適切に遂行できない場合があります。
+                </p>
+                <!-- Space -->
+                <div class="space_2"></div>
+                <p class="noto_demilight font_100 txt_left">
+                    ７．当社が保有する開示対象個人情報の開示・訂正等の請求手続<br>
+                    当社は、個人情報のご本人から、個人情報の利用目的の通知、開示等のお申し出があったときは、法令等に従い、誠実に対応します。手続きに関するお問い合わせは、
+                    当社「個人情報に関するお問合わせ窓口」にて承ります。
+                </p>
+                <!-- Space -->
+                <div class="space_2"></div>
+                <p class="noto_demilight font_100 txt_left">
+                    ８．個人情報の取り扱いに関する相談・苦情窓口<br>
+                    当社の個人情報の取り扱いにつきまして、ご意見・ご要望・苦情等がございましたら、「個人情報に関するお問合わせ窓口」までご連絡くださいますようお願い申し上げます。
+                </p>
+                <!-- Space -->
+                <div class="space_2"></div>
+                <p class="noto_demilight font_100 txt_left">
+                    ９．安全管理のための措置<br>
+                    当社は、特に情報通信ネットワークにおける情報保護および不正アクセスの防止にあたっては、情報通信ネットワーク安全・信頼性基準（昭和62年郵政省告示第73号）等の基準を活用します。
+                </p>
+
+
+
+                <!-- Space -->
+                <div class="space_5"></div>
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <footer>
+        <div class="txt_tpad_1 txt_bpad_1" style="background-color: #25664a;">
+            <p class="font_100 white noto_demilight">Copyright (C) 2021 OffGrid-Lab all rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        $("html").easeScroll();
+
+        // Navigation
+        $('#toggle').click(function () {
+            $(this).toggleClass('active');
+            $('#overlay').toggleClass('open');
+        });
+
+        function close_menu() {
+            $('#toggle').toggleClass('active');
+            $('#overlay').toggleClass('open');
+        }
+    </script>
+
+    <script>
+        $(function () {
+            $('a[href*=#]:not([href=#])').click(function () {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location
+                    .hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $("html").easeScroll();
+    </script>
+
+    <!-- Fade Animation -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,1579 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns#">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:description" content="" />
+    <meta property="fb:app_id" content="">
+    <title>OffGridLab</title>
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PJLQ9VQ');
+    </script>
+    <!-- End Google Tag Manager -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
+    <!-- CSS読込 -->
+    <!-- <link rel="stylesheet" href="assets/css/normalize.css"> -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/pagetop.css">
+    <link href="js/slick.css" rel="stylesheet" type="text/css">
+    <link href="js/slick-theme.css" rel="stylesheet" type="text/css">
+    <!-- Base CSS -->
+    <link rel="stylesheet" href="css/base.css">
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- フォントオーサム -->
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <!-- ファビコン読込 -->
+    <link rel="shortcut icon" href="img/favicon.ico" />
+
+    <!-- Animation Libraries -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <meta http-equiv="imagetoolbar" content="no">
+    <!-- 検索有無設定 -->
+    <!-- jquery読込 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/easy-rollover.js"></script>
+    <script src="https://use.typekit.net/zzb5mon.js"></script>
+    <script src="js/modernizr-2.8.3.min.js"></script>
+    <script>
+        try {
+            Typekit.load({
+                async: true
+            });
+        } catch (e) {}
+    </script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/modal.js"></script>
+    <script type="text/javascript" src="js/base-color.js"></script>
+    <script src="https://ajaxzip3.github.io/ajaxzip3.js"></script>
+
+    <script type="text/javascript" src="js/jquery.easeScroll.js"></script>
+    <!-- スムーススクロール -->
+    <script type="text/javascript">
+        $(function () {
+            $('a[href^="#"]').on('click', function () {
+                var speed = 1000;
+                var href = $(this).attr('href');
+                var target = $(href == '#' || href == '' ? 'html' : href);
+                var position = target.offset().top;
+                $('body,html').animate({
+                    scrollTop: position
+                }, speed, 'swing');
+                return false;
+            });
+        });
+    </script>
+
+    <style id='base_val' type='text/css'></style>
+
+    <style type='text/css'>
+        table {
+            margin: auto;
+        }
+
+        /*表示切替*/
+        html body .view_pc {
+            display: block !important;
+        }
+
+        html body table.view_pc {
+            display: table !important;
+        }
+
+        html body table.view_pc tr {
+            display: table !important;
+        }
+
+        html body table.view_pc th {
+            display: table !important;
+        }
+
+        html body table.view_pc td {
+            display: table !important;
+        }
+
+        html body .view_pctab {
+            display: block !important;
+        }
+
+        html body table.view_pctab {
+            display: table !important;
+        }
+
+        html body table.view_pctab tr {
+            display: table !important;
+        }
+
+        html body table.view_pctab th {
+            display: table !important;
+        }
+
+        html body table.view_pctab td {
+            display: table !important;
+        }
+
+        html body .view_tab {
+            display: none !important;
+        }
+
+        html body .view_sp {
+            display: none !important;
+        }
+
+        html body .view_tabsp {
+            display: none !important;
+        }
+
+        @media only screen and (max-width: 1050px) {
+            html body .view_pc {
+                display: none !important;
+            }
+
+            html body .view_pctab {
+                display: block !important;
+            }
+
+            html body table.view_pctab {
+                display: table !important;
+            }
+
+            html body table.view_pctab tr {
+                display: table !important;
+            }
+
+            html body table.view_pctab th {
+                display: table !important;
+            }
+
+            html body table.view_pctab td {
+                display: table !important;
+            }
+
+            html body .view_tab {
+                display: block !important;
+            }
+
+            html body table.view_tab {
+                display: table !important;
+            }
+
+            html body table.view_tab tr {
+                display: table !important;
+            }
+
+            html body table.view_tab th {
+                display: table !important;
+            }
+
+            html body table.view_tab td {
+                display: table !important;
+            }
+
+            html body .view_sp {
+                display: none !important;
+            }
+
+            html body .view_tabsp {
+                display: block !important;
+            }
+
+            html body table.view_tabsp {
+                display: table !important;
+            }
+
+            html body table.view_tabsp tr {
+                display: table !important;
+            }
+
+            html body table.view_tabsp th {
+                display: table !important;
+            }
+
+            html body table.view_tabsp td {
+                display: table !important;
+            }
+        }
+
+        @media only screen and (max-width: 770px) {
+            html body .view_pc {
+                display: none !important;
+            }
+
+            html body .view_pctab {
+                display: none !important;
+            }
+
+            html body .view_tab {
+                display: none !important;
+            }
+
+            html body .view_sp {
+                display: block !important;
+            }
+
+            html body table.view_sp {
+                display: table !important;
+            }
+
+            html body table.view_sp tr {
+                display: table !important;
+            }
+
+            html body table.view_sp th {
+                display: table !important;
+            }
+
+            html body table.view_sp td {
+                display: table !important;
+            }
+
+            html body .view_tabsp {
+                display: block !important;
+            }
+
+            html body table.view_tabsp {
+                display: table !important;
+            }
+
+            html body table.view_tabsp tr {
+                display: table !important;
+            }
+
+            html body table.view_tabsp th {
+                display: table !important;
+            }
+
+            html body table.view_tabsp td {
+                display: table !important;
+            }
+        }
+
+        /* エラーメッセージ　赤文字設定 */
+        .error_msg {
+            color: #ff2e5a !important;
+        }
+    </style>
+
+    <style type='text/css'>
+        @font-face {
+            font-family: 'noto_regular';
+            src: url(assets/css/fonts/NotoSansCJKjp-Regular.otf);
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'noto_medium';
+            src: url(assets/css/fonts/NotoSansCJKjp-Medium.otf);
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'noto_bold';
+            src: url(assets/css/fonts/NotoSansCJKjp-Bold.otf);
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'noto_black';
+            src: url(assets/css/fonts/NotoSansCJKjp-Black.otf);
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'noto_demilight';
+            src: url(assets/css/fonts/NotoSansCJKjp-DemiLight.otf);
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'mont_light_italic';
+            src: url(assets/css/fonts/Montserrat-LightItalic.ttf);
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'mont_italic';
+            src: url(assets/css/fonts/Montserrat-Italic.ttf);
+            font-style: normal;
+        }
+
+        .noto_regular {
+            font-family: 'noto_regular';
+        }
+
+        .noto_medium {
+            font-family: 'noto_medium';
+        }
+
+        .noto_bold {
+            font-family: 'noto_bold';
+        }
+
+        .noto_black {
+            font-family: 'noto_black';
+        }
+
+        .noto_demilight {
+            font-family: 'noto_demilight';
+        }
+
+        .mont_light_italic {
+            font-family: 'mont_light_italic';
+        }
+
+        .mont_italic {
+            font-family: 'mont_italic';
+        }
+
+        .noto_regular {
+            font-family: 'noto_regular';
+        }
+
+        .noto_medium {
+            font-family: 'noto_medium';
+        }
+
+        .noto_bold {
+            font-family: 'noto_bold';
+        }
+
+        .noto_black {
+            font-family: 'noto_black';
+        }
+
+        .noto_demilight {
+            font-family: 'noto_demilight';
+        }
+
+        .mont_light_italic {
+            font-family: 'mont_light_italic';
+        }
+
+        .flex_start {
+            align-items: flex-start;
+        }
+
+        .inline_block {
+            display: inline-block;
+        }
+
+        .mg_auto {
+            margin: 0 auto;
+        }
+
+        .txt_mg_0 {
+            margin: 0;
+        }
+
+        .txt_p_0 {
+            padding: 0;
+        }
+
+        .txt_pd_l_foot {
+            padding-left: 1.1vw;
+        }
+
+        .txt_deco {
+            text-decoration: none;
+        }
+
+        .bg_wht_grey {
+            background-color: #f5f5f5;
+        }
+
+        .u_line_d_grey {
+            border-bottom: solid 1px #475160;
+        }
+
+        .u_line_top_d_grey {
+            border-top: solid 1px #475160;
+        }
+
+        .u_line_right_d_grey {
+            border-right: solid 2px #475160;
+        }
+
+        .undrag {
+            user-drag: none;
+            user-select: none;
+            -moz-user-select: none;
+            -webkit-user-drag: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+        }
+
+        .txt_main_color {
+            color: #25664a;
+        }
+
+        .relative {
+            position: relative;
+        }
+
+        .section_7 .view_pc p {
+            color: #25664a;
+            font-size: 1.25vw;
+            font-family: 'noto_demilight';
+        }
+
+        .section_7 .view_tabsp p {
+            color: #000;
+            font-size: 4vw !important;
+            font-family: 'noto_demilight';
+        }
+
+        #display_none {
+            display: none !important;
+        }
+    </style>
+
+
+    <link rel="stylesheet" href="css/sp.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <!-- PC -->
+        <div class="view_pc">
+            <div class="width_100 relative txt_tpad_1 txt_bpad_1">
+                <div class="cont_wrapper_65 flex flex_center" style="justify-content: space-between;">
+                    <div class="width_14">
+                        <a href="index.html" class="" style="display: block;">
+                            <div class="width_100 mg_auto">
+                                <img src="img/top_logo.png" alt="Off Grid Lab" class="fix_zoom undrag">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="width_65">
+                        <div class="width_93 mg_auto flex flex_center">
+                            <div class="flex flex_center">
+                                <a href="#企業理念" style="display: block;">
+                                    <p class="noto_regular txt_mg_0 font_75 txt_tpad_05 txt_bpad_05 txt_main_color">
+                                        企業理念 <span class="txt_lpad_1">／</span>
+                                    </p>
+                                </a>
+                            </div>
+
+                            <div class="flex flex_center">
+                                <a href="#事業内容" style="display: block;">
+                                    <p class="noto_regular txt_mg_0 font_75 txt_tpad_05 txt_bpad_05 txt_main_color">
+                                        事業内容 <span class="txt_lpad_1">／</span></p>
+                                </a>
+                            </div>
+
+                            <div class="flex flex_center">
+                                <a href="#SDGsへの取り組み" style="display: block;">
+                                    <p class="noto_regular txt_mg_0 font_75 txt_tpad_05 txt_bpad_05 txt_main_color">
+                                        SDGｓ<span class="txt_lpad_1">／</span></p>
+                                </a>
+                            </div>
+
+                            <div class="flex flex_center">
+                                <a href="#代表挨拶" style="display: block;">
+                                    <p class="noto_regular txt_mg_0 font_75 txt_tpad_05 txt_bpad_05 txt_main_color">
+                                        代表挨拶 <span class="txt_lpad_1">／</span></p>
+                                </a>
+                            </div>
+
+                            <div class="flex flex_center">
+                                <a href="#会社概要" style="display: block;">
+                                    <p class="noto_regular txt_mg_0 font_75 txt_tpad_05 txt_bpad_05 txt_main_color">
+                                        会社概要 <span class="txt_lpad_1">／</span></p>
+                                </a>
+                            </div>
+
+                            <div class="flex flex_center">
+                                <a href="contact-form.php" style="display: block;">
+                                    <p class="noto_regular txt_mg_0 font_75 txt_tpad_05 txt_bpad_05 txt_main_color">
+                                        お問い合わせ</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- MOBILE -->
+        <div class="view_tabsp fixed_top" style=" z-index: 1000000; border-bottom: 2px solid #CCCCCC;">
+            <div class="bg_white">
+                <div class="cont_wrapper_65 flex flex_center txt_tpad_2 txt_bpad_2">
+                    <div class="width_50 mg_auto flex flex_center">
+                        <a href="index.html" class="width_95 mg_auto">
+                            <img class="fix_zoom" src="img/top_logo.png" alt="Off Grid Lab">
+                        </a>
+                    </div>
+                    <div class="width_10">
+                    </div>
+
+                    <div class="width_28">
+                    </div>
+
+                    <!-- Hamburger Menu -->
+                    <div class="width_10 mg_auto">
+
+                        <div class="width_100 relative txt_center button_container block flex flex_center" id="toggle"
+                            style=" z-index:152;">
+                            <span class="top width_100 mg_auto"></span>
+                            <span class="middle width_100 mg_auto"></span>
+                            <span class="bottom width_100 mg_auto"></span>
+                            <div class="nav_menu"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Overlay Menu Open -->
+            <div class="overlay" id="overlay" style="z-index:150; overflow-y: scroll; height: 100vh !important;">
+                <nav class="overlay-menu">
+                    <ul class="width_100 mg_auto flex flex_center">
+                        <li class="width_100 mg_auto" style="border-bottom: 2px solid #CCCCCC;">
+                            <div class="space_1"></div>
+                            <a class="width_95 mg_auto font_100 txt_tpad_1 txt_bpad_1 block txt_center"
+                                onclick="close_menu();" href="#企業理念"><span class="noto_medium font_125 white"
+                                    style="letter-spacing: 10px;">企業理念</span></a>
+                            <div class="space_1"></div>
+                        </li>
+                        <li class="width_100 mg_auto" style="border-bottom: 2px solid #CCCCCC;">
+                            <div class="space_1"></div>
+                            <a class="width_95 mg_auto font_100 txt_tpad_1 txt_bpad_1 block txt_center"
+                                onclick="close_menu();" href="#事業内容"><span class="noto_medium font_125 white"
+                                    style="letter-spacing: 10px;">事業内容</span></a>
+                            <div class="space_1"></div>
+                        </li>
+                        <li class="width_100 mg_auto" style="border-bottom: 2px solid #CCCCCC;">
+                            <div class="space_1"></div>
+                            <a class="width_95 mg_auto font_100 txt_tpad_1 txt_bpad_1 block txt_center bold"
+                                onclick="close_menu();" href="#SDGsへの取り組み"><span class="font_125 white noto_medium"
+                                    style="letter-spacing: 10px;">SDGｓ</span></a>
+                            <div class="space_1"></div>
+                        </li>
+                        <li class="width_100 mg_auto" style="border-bottom: 2px solid #CCCCCC;">
+                            <div class="space_1"></div>
+                            <a class="width_95 mg_auto font_100 txt_tpad_1 txt_bpad_1 block txt_center"
+                                onclick="close_menu();" href="#代表挨拶"><span class="font_125 white noto_medium"
+                                    style="letter-spacing: 10px;">代表挨拶</span></a>
+                            <div class="space_1"></div>
+                        </li>
+                        <li class="width_100 mg_auto" style="border-bottom: 2px solid #CCCCCC;">
+                            <div class="space_1"></div>
+                            <a class="width_95 mg_auto font_100 txt_tpad_1 txt_bpad_1 block txt_center"
+                                onclick="close_menu();" href="#会社概要"><span class="noto_medium font_125 white"
+                                    style="letter-spacing: 10px;">会社概要</span></a>
+                            <div class="space_1"></div>
+                        </li>
+                        <li class="width_100 mg_auto" style="border-bottom: 2px solid #CCCCCC;">
+                            <div class="space_1"></div>
+                            <a class="width_95 mg_auto font_100 txt_tpad_1 txt_bpad_1 block txt_center"
+                                href="contact-form.php"><span class="noto_medium font_125 white"
+                                    style="letter-spacing: 10px;">お問い合わせ</span></a>
+                            <div class="space_1"></div>
+                        </li>
+
+                    </ul>
+
+                </nav>
+            </div>
+
+
+        </div>
+    </header>
+
+    <main style="background-color: #f3f3f3;">
+
+        <!-- Section 1 Banner -->
+        <section id="section_1">
+            <!-- PC -->
+            <div class="view_pc">
+                <img class="fix_zoom undrag" src="img/sect_1/banner.png" alt="">
+                <div class="cont_wrapper_65">
+                </div>
+            </div>
+            <!-- SP -->
+            <div class="view_tabsp">
+                <div class="width_100" style="margin-top: 7vw;">
+                    <img class="fix_zoom undrag" src="img/sect_1/banner_sp.png" alt="">
+                </div>
+                <div class="cont_wrapper_65">
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2 -->
+        <section id="企業理念">
+            <!-- PC -->
+            <div class="view_pc">
+                <!-- Spacing -->
+                <div class="space_5"></div>
+                <div class="cont_wrapper_65">
+                    <div class="flex bg_img z50 txt_tpad_4">
+                        <div class="bg_overlay bg_white t0_l50 width_100"
+                            style="height: 100%; z-index: -150; left: 23%;">
+                        </div>
+                        <div class="width_50" data-aos="fade-up-right" data-aos-duration="3000">
+                            <h2 class="txt_left noto_regular font_200 txt_main_color" style="letter-spacing: 0.3em;">
+                                企業理念
+                            </h2>
+                            <h3 class="txt_left font_75 width_37 txt_bpad_05 txt_main_color mont_light_italic"
+                                style="border-bottom: 2px solid #25664a;">
+                                Corporate
+                                Philosophy
+                            </h3>
+                            <p
+                                class="txt_left txt_tpad_3 txt_bpad_3 line_h_200 font_100 width_85 txt_main_color noto_demilight">
+                                社会課題解決型企業として、再生可能エネルギーを通してSDGsで示されているグローバルな課題解決や、ESGに対する地球温暖化等の社会課題の解決を追求いたします。さらに再生可能エネルギーをより身近なものとするため、太陽光発電の構築コストを2030年までに現在の1/5とし、将来的に再生可能エネルギーを工業製品化することを目指しています。
+                            </p>
+                        </div>
+                        <div class="width_50">
+                            <div class="tr_0 width_51" style="right: -1%; top: 12%;" data-aos="fade-up-right"
+                                data-aos-duration="3000">
+                                <img src="img/sect_2/tree_img.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Spacing -->
+                <div class="space_2"></div>
+            </div>
+            <div class="view_tabsp">
+                <!-- Spacing -->
+                <div class="cont_wrapper_65">
+                    <div class="bg_img z50 txt_tpad_4">
+                        <div class="bg_overlay bg_white t0_l50 width_100"
+                            style="height: 100%; z-index: -150; left: 40%;">
+                        </div>
+                        <div class="width_100" data-aos="fade-up-right" data-aos-duration="3000">
+                            <h2 class="txt_left noto_regular font_200 txt_main_color" style="letter-spacing: 0.3em;">
+                                企業理念
+                            </h2>
+                            <h3 class="txt_left font_75 width_37 txt_bpad_05 txt_main_color mont_light_italic"
+                                style="border-bottom: 2px solid #25664a;">
+                                Corporate
+                                Philosophy
+                            </h3>
+                            <p
+                                class="txt_left txt_tpad_3 txt_bpad_2 line_h_300 font_100 width_100 txt_main_color noto_demilight">
+                                社会課題解決型企業として、再生可能エネルギーを通してSDGsで示されているグローバルな課題解決や、ESGに対する地球温暖化等の社会課題の解決を追求いたします。さらに再生可能エネルギーをより身近なものとするため、太陽光発電の構築コストを2030年までに現在の1/5とし、将来的に再生可能エネルギーを工業製品化することを目指しています。
+                            </p>
+                        </div>
+                        <div class="width_100 txt_bpad_5">
+                            <div class="width_100" style="right: -1%; top: 12%;">
+                                <img class="fix_zoom undrag" src="img/sect_2/tree_img.png" alt=""
+                                    data-aos="fade-up-right" data-aos-duration="3000">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Spacing -->
+                <div class="space_2"></div>
+            </div>
+        </section>
+
+        <!-- Section 3 -->
+        <section id="事業内容">
+            <!-- PC -->
+            <div class="view_pc">
+                <!-- Spacing -->
+                <div class="space_10"></div>
+                <div class="cont_wrapper_65">
+                    <div class="flex">
+                        <div class="width_50 bg_img">
+                            <img src="img/sect_3/plan_image_1.png" alt="" data-aos="fade-up-right"
+                                data-aos-duration="3000">
+                            <div class="tl_0">
+                                <!-- Spacing -->
+                                <div class="space_4"></div>
+                                <p class="font_100 white txt_left txt_left txt_lpad_4 txt_rpad_4 line_h_300
+                                    noto_demilight" data-aos="fade-up-right" data-aos-duration="3000">
+                                    再生可能エネルギー<br>
+                                    生産システムの<br>
+                                    開発・販売・運用を行います。</p>
+                            </div>
+                        </div>
+                        <div class="width_50 bg_img txt_tpad_5">
+                            <div class="tr_0" style="top: -11%;">
+                                <h2 class="txt_right noto_regular font_200 txt_main_color"
+                                    style="letter-spacing: 0.3em;" data-aos="fade-up-right" data-aos-duration="3000">
+                                    事業内容</h2>
+                                <h3 class="txt_right font_75 txt_bpad_05 txt_main_color mont_light_italic"
+                                    style="border-bottom: 2px solid #25664a;" data-aos="fade-up-right"
+                                    data-aos-duration="3000">Business</h3>
+                            </div>
+                            <img src="img/sect_3/plan_image_2.png" alt="" data-aos="fade-up-right"
+                                data-aos-duration="3000">
+                            <div class="tl_0">
+                                <!-- Spacing -->
+                                <div class="space_10"></div>
+                                <p class="font_100 white txt_left txt_left txt_lpad_5 txt_rpad_4 line_h_300
+                                    noto_demilight" data-aos="fade-up-right" data-aos-duration="3000">
+                                    オングリット／オフグリッドを問わず<br>
+                                    電力小売事業をユーザーに<br>
+                                    幅広く展開いたします。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Spacing -->
+                <div class="space_5"></div>
+            </div>
+            <!-- SP -->
+            <div class="view_tabsp">
+                <!-- Spacing -->
+                <div class="space_3"></div>
+                <div class="cont_wrapper_65">
+                    <div class="width_100">
+                        <div class="width_45 txt_bpad_4 f_right" data-aos="fade-up-right" data-aos-duration="3000">
+                            <h2 class="txt_right noto_regular font_200 txt_main_color" style="letter-spacing: 0.3em;">
+                                事業内容</h2>
+                            <h3 class="txt_right font_75 txt_bpad_05 txt_main_color mont_light_italic rspace_1"
+                                style="border-bottom: 2px solid #25664a;">Business</h3>
+                        </div>
+                        <div class="width_92 bg_img" style="clear: both;" data-aos="fade-up-right"
+                            data-aos-duration="3000">
+                            <img src="img/sect_3/plan_image_1.png" alt="">
+                            <div class="tl_0">
+                                <!-- Spacing -->
+                                <div class="space_4"></div>
+                                <p
+                                    class="font_100 white txt_left txt_left txt_lpad_4 txt_rpad_4 line_h_300 noto_demilight">
+                                    再生可能エネルギー<br>
+                                    生産システムの<br>
+                                    開発・販売・運用を行います。</p>
+                            </div>
+                        </div>
+                        <div class="width_100 bg_img" style="margin-top: -7px;" data-aos="fade-up-right"
+                            data-aos-duration="3000">
+
+                            <img src="img/sect_3/plan_image_2.png" alt="">
+                            <div class="tl_0">
+                                <!-- Spacing -->
+                                <div class="space_3"></div>
+                                <p
+                                    class="font_100 white txt_left txt_left txt_lpad_5 txt_rpad_4 line_h_300 noto_demilight">
+                                    オングリット／オフグリッドを問わず<br>
+                                    電力小売事業をユーザーに<br>
+                                    幅広く展開いたします。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Spacing -->
+                <div class="space_5"></div>
+            </div>
+        </section>
+
+        <!-- Section 4 -->
+        <section id="section_4">
+            <!-- PC -->
+            <div class="view_pc">
+                <div class="bg_white">
+                    <!-- Spacing -->
+                    <div class="space_5"></div>
+                    <div class="cont_wrapper_65">
+                        <h2 class="txt_left noto_regular font_200 txt_main_color" style="letter-spacing: 0.3em;"
+                            data-aos="fade-up-right" data-aos-duration="3000">
+                            事業ロードマップ
+                        </h2>
+                        <h3 class="txt_left font_75 width_39 txt_bpad_05 txt_main_color mont_light_italic"
+                            style="border-bottom: 2px solid #25664a;" data-aos="fade-up-right" data-aos-duration="3000">
+                            roadmap
+                        </h3>
+                        <!-- Spacing -->
+                        <div class="space_4"></div>
+                        <div class="flex">
+                            <div class="width_50">
+                                <!-- Step 1 -->
+                                <div class="txt_lpad_2 txt_rpad_2 txt_tpad_2 txt_bpad_2"
+                                    style="background-color: #246649;" data-aos="fade-up-right"
+                                    data-aos-duration="3000">
+                                    <h2 class="font_200 txt_left white mont_light_italic">STEP 1</h2>
+                                    <div class="flex txt_bpad_05" style="justify-content: flex-start;">
+                                        <p class="font_75 txt_left width_27 white noto_demilight">2021年7月～</p>
+                                        <p class="font_75 txt_left width_73 white noto_demilight">リユース蓄電池/制御システム開発の実証実験
+                                        </p>
+                                    </div>
+                                    <div class="flex" style="justify-content: flex-start;">
+                                        <p class="font_75 txt_left width_27 white noto_demilight">2022年1月～</p>
+                                        <p class="font_75 txt_left width_73 white noto_demilight">
+                                            モデルとなる集合住宅にて実証実験開始<br>
+                                            実験協力/協賛企業との共同実験も検討</p>
+                                    </div>
+                                </div>
+                                <!-- Spacing -->
+                                <div class="space_2"></div>
+                                <!-- Step 2 -->
+                                <div class="txt_lpad_2 txt_rpad_2 txt_tpad_2 txt_bpad_2"
+                                    style="background-color: #246649;" data-aos="fade-up-right"
+                                    data-aos-duration="3000">
+                                    <h2 class="font_200 txt_left white mont_light_italic">STEP 2</h2>
+                                    <div class="flex txt_bpad_05" style="justify-content: flex-start;">
+                                        <p class="font_75 txt_left width_27 white noto_demilight">2023年頃～</p>
+                                        <p class="font_75 txt_left width_73 white noto_demilight">地方自治体庁舎、学校、広域避難場所、<br>
+                                            集合住宅などに設置を開始</p>
+                                    </div>
+                                </div>
+                                <!-- Spacing -->
+                                <div class="space_2"></div>
+                                <!-- Step 3 -->
+                                <div class="txt_lpad_2 txt_rpad_2 txt_tpad_2 txt_bpad_2"
+                                    style="background-color: #246649;" data-aos="fade-up-right"
+                                    data-aos-duration="3000">
+                                    <h2 class="font_200 txt_left white mont_light_italic">STEP 3</h2>
+                                    <div class="flex txt_bpad_05" style="justify-content: flex-start;">
+                                        <p class="font_75 txt_left width_27 white noto_demilight">2025年頃～</p>
+                                        <p class="font_75 txt_left width_73 white noto_demilight">VPPサービスを開始</p>
+                                    </div>
+                                </div>
+                                <!-- Spacing -->
+                                <div class="space_2"></div>
+                                <!-- Step 4 -->
+                                <div class="txt_lpad_2 txt_rpad_2 txt_tpad_2 txt_bpad_2"
+                                    style="background-color: #246649;" data-aos="fade-up-right"
+                                    data-aos-duration="3000">
+                                    <h2 class="font_200 txt_left white mont_light_italic">STEP 4</h2>
+                                    <div class="flex txt_bpad_05" style="justify-content: flex-start;">
+                                        <p class="font_75 txt_left width_27 white noto_demilight">2030年頃～</p>
+                                        <p class="font_75 txt_left width_73 white noto_demilight"
+                                            style="font-size: 0.9271vw;">導入集合住宅数３万棟超、
+                                            <br>原発一基分（約100万kW）相当の発電量を目指す
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="width_50" style="margin-top: -7%;">
+                                <img src="img/sect_4/house_image.png" alt="" data-aos="fade-up-right"
+                                    data-aos-duration="3000">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Spacing -->
+                    <div class="space_5"></div>
+                </div>
+            </div>
+            <!-- SP -->
+            <div class="view_tabsp">
+                <div class="bg_white">
+                    <!-- Spacing -->
+                    <div class="space_5"></div>
+                    <div class="cont_wrapper_65">
+                        <h2 class="txt_left noto_regular font_200 txt_main_color" style="letter-spacing: 0.3em;"
+                            data-aos="fade-up-right" data-aos-duration="3000">
+                            事業ロードマップ
+                        </h2>
+                        <h3 class="txt_left font_75 width_87 txt_bpad_05 txt_main_color mont_light_italic"
+                            style="border-bottom: 2px solid #25664a;" data-aos="fade-up-right" data-aos-duration="3000">
+                            Roadmap
+                        </h3>
+                        <!-- Spacing -->
+                        <div class="space_4"></div>
+                        <div class="width_100">
+                            <div class="width_100">
+                                <!-- Step 1 -->
+                                <div class="flex flex_center txt_lpad_2 txt_rpad_2 txt_tpad_2 txt_bpad_2"
+                                    style="background-color: #246649;" data-aos="fade-up-right"
+                                    data-aos-duration="3000">
+                                    <div class="width_20">
+                                        <h2 class="font_150 txt_center white mont_light_italic">STEP <span
+                                                class="txt_center white mont_light_italic"
+                                                style="display: block;">1</span></h2>
+                                    </div>
+                                    <div class="width_70">
+                                        <div class="txt_bpad_05" style="justify-content: flex-start;">
+                                            <p class="font_100 txt_left white noto_demilight">2021年7月～</p>
+                                            <p class="font_100 txt_left white noto_demilight">
+                                                リユース蓄電池/制御システム開発の実証実験
+                                            </p>
+                                            <!-- Spacing -->
+                                            <div class="space_2"></div>
+                                            <p class="font_100 txt_left white noto_demilight">2022年1月～</p>
+                                            <p class="font_100 txt_left white noto_demilight">
+                                                モデルとなる集合住宅にて実証実験開始<br>
+                                                実験協力/協賛企業との共同実験も検討
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Spacing -->
+                                <div class="space_2"></div>
+                                <!-- Step 2 -->
+                                <div class="flex flex_center txt_lpad_2 txt_rpad_2 txt_tpad_2 txt_bpad_2"
+                                    style="background-color: #246649;" data-aos="fade-up-right"
+                                    data-aos-duration="3000">
+                                    <div class="width_20">
+                                        <h2 class="font_150 txt_center white mont_light_italic">STEP <span
+                                                class="txt_center white mont_light_italic"
+                                                style="display: block;">2</span></h2>
+                                    </div>
+                                    <div class="width_70">
+                                        <div class="txt_bpad_05" style="justify-content: flex-start;">
+                                            <p class="font_100 txt_left white noto_demilight">2023年頃～</p>
+                                            <p class="font_100 txt_left white noto_demilight">
+                                                地方自治体庁舎、学校、広域避難場所、<br>
+                                                集合住宅などに設置を開始
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Spacing -->
+                                <div class="space_2"></div>
+                                <!-- Step 3 -->
+                                <div class="flex flex_center txt_lpad_2 txt_rpad_2 txt_tpad_2 txt_bpad_2"
+                                    style="background-color: #246649;" data-aos="fade-up-right"
+                                    data-aos-duration="3000">
+                                    <div class="width_20">
+                                        <h2 class="font_150 txt_center white mont_light_italic">STEP <span
+                                                class="txt_center white mont_light_italic"
+                                                style="display: block;">3</span></h2>
+                                    </div>
+                                    <div class="width_70">
+                                        <div class="txt_bpad_05" style="justify-content: flex-start;">
+                                            <p class="font_100 txt_left white noto_demilight">2025年頃～</p>
+                                            <p class="font_100 txt_left white noto_demilight">
+                                                VPPサービスを開始
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Spacing -->
+                                <div class="space_2"></div>
+                                <!-- Step 4 -->
+                                <div class="flex flex_center txt_lpad_2 txt_rpad_2 txt_tpad_2 txt_bpad_2"
+                                    style="background-color: #246649;" data-aos="fade-up-right"
+                                    data-aos-duration="3000">
+                                    <div class="width_20">
+                                        <h2 class="font_150 txt_center white mont_light_italic">STEP <span
+                                                class="txt_center white mont_light_italic"
+                                                style="display: block;">4</span></h2>
+                                    </div>
+                                    <div class="width_70">
+                                        <div class="txt_bpad_05" style="justify-content: flex-start;">
+                                            <p class="font_100 txt_left white noto_demilight">2030年頃～</p>
+                                            <p class="font_100 txt_left white noto_demilight">
+                                                導入集合住宅数３万棟超、原発一基分<br>
+                                                （約100万kW）相当の発電量を目指す
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Spacing -->
+                            <div class="space_3"></div>
+                            <div class="wrapper_60">
+                                <img class="fix_zoom undrag" src="img/sect_4/house_image.png" alt=""
+                                    data-aos="fade-up-right" data-aos-duration="3000">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Spacing -->
+                    <div class="space_3"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5 -->
+        <section id="SDGsへの取り組み">
+            <!-- PC -->
+            <div class="view_pc">
+                <!-- Spacing -->
+                <div class="space_5"></div>
+                <div class="cont_wrapper_65">
+                    <div class="bg_img">
+                        <h2 class="txt_right noto_regular font_200 txt_main_color" style="letter-spacing: 0.3em;"
+                            data-aos="fade-up-right" data-aos-duration="3000">
+                            SDGsへの取り組み
+                        </h2>
+                        <h3 class="txt_right font_75 width_44 txt_bpad_05 txt_main_color mont_light_italic"
+                            style="border-bottom: 2px solid #25664a; position: absolute; right: 0;"
+                            data-aos="fade-up-right" data-aos-duration="3000">Initiative for SDGs
+                        </h3>
+                        <!-- Spacing -->
+                        <div class="space_5"></div>
+                        <p class="font_100 txt_main_color txt_left line_h_200 txt_bpad_3 noto_demilight"
+                            data-aos="fade-up-right" data-aos-duration="3000">
+                            2015年9月、国連本部において「国連持続可能な開発サミット」が開催され、「持続可能な開発目標（SDGs：Sustainable Development
+                            Goals）」が加盟193ヵ国の全会一致で採択されました。このSDGsは、2030年に向け、持続可能な未来を実現するために、先進国を含む国際社会全体が取り組むべき17の目標と169のターゲットを定めたものです。当社は、再生可能エネルギーを通してSDGsで示されているグローバルな社会課題の解決に努め、「持続可能な世界」の実現を目指してまいります。
+                        </p>
+
+                        <div class="flex" style="align-items: flex-end; justify-content: space-between;">
+                            <div class="width_50">
+                                <img src="img/sect_5/goals_image_1.png" alt="" data-aos="fade-up-right"
+                                    data-aos-duration="3000">
+                            </div>
+                            <div class="width_45" style="margin-bottom: 0.2vw !important;">
+                                <div class="bg_white flex flex_center" style="height: 7.8vw;" data-aos="fade-up-right"
+                                    data-aos-duration="3000">
+                                    <div class="width_1"></div>
+                                    <div class="width_14 lspace_1 flex">
+                                        <img src="img/sect_5/logo_15.png" alt="">
+                                    </div>
+                                    <div class="width_1"></div>
+                                    <div class="width_59">
+                                        <p class="font_75 txt_left noto_demilight txt_main_color">再生可能エネルギーを通して<br>
+                                            環境保護・保全活動に取り組みます。</p>
+                                    </div>
+                                </div>
+                                <div class="space_05"></div>
+                                <div class="bg_white flex flex_center" style="justify-content: center; height: 7.8vw;"
+                                    data-aos="fade-up-right" data-aos-duration="3000">
+                                    <div class="width_27 flex">
+                                        <img src="img/sect_5/logo_16.png" alt="">
+                                    </div>
+                                    <div class="width_5"></div>
+                                    <div class="width_55">
+                                        <p class="font_75 txt_left line_h_200 noto_demilight txt_main_color">
+                                            太陽光発電のエネルギー単価を下げ、
+                                            人々が安全に快適に過ごせる
+                                            社会を目指します。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Spacing -->
+                <div class="space_5"></div>
+            </div>
+            <div class="view_tabsp">
+                <!-- Spacing -->
+                <div class="space_5"></div>
+                <div class="cont_wrapper_65">
+                    <div class="bg_img">
+                        <h2 class="txt_right noto_regular font_200 txt_main_color" style="letter-spacing: 0.3em;"
+                            data-aos="fade-up-right" data-aos-duration="3000">
+                            SDGsへの取り組み
+                        </h2>
+                        <h3 class="txt_right font_75 width_44 txt_bpad_05 txt_main_color mont_light_italic"
+                            style="border-bottom: 2px solid #25664a; position: absolute; right: 2%;"
+                            data-aos="fade-up-right" data-aos-duration="3000">Initiative for SDGs
+                        </h3>
+                        <!-- Spacing -->
+                        <div class="space_5"></div>
+                        <p class="font_100 txt_main_color txt_left line_h_300 txt_bpad_3 noto_demilight"
+                            data-aos="fade-up-right" data-aos-duration="3000">
+                            2015年9月、国連本部において「国連持続可能な開発サミット」が開催され、「持続可能な開発目標（SDGs：Sustainable Development
+                            Goals）」が加盟193ヵ国の全会一致で採択されました。このSDGsは、2030年に向け、持続可能な未来を実現するために、先進国を含む国際社会全体が取り組むべき17の目標と169のターゲットを定めたものです。当社は、再生可能エネルギーを通してSDGsで示されているグローバルな社会課題の解決に努め、「持続可能な世界」の実現を目指してまいります。
+                        </p>
+
+                        <div class="width_100" style="align-items: flex-end; justify-content: space-between;"
+                            data-aos="fade-up-right" data-aos-duration="3000">
+                            <div class="width_100">
+                                <img src="img/sect_5/goals_image_1.png" alt="">
+                            </div>
+                            <div class="space_1"></div>
+                            <div class="width_100" style="margin-bottom: 0.2vw !important;">
+                                <div class="bg_white flex flex_center txt_bpad_2 txt_tpad_2 txt_lpad_2 txt_rpad_2">
+                                    <div class="width_1"></div>
+                                    <div class="width_14 lspace_1 flex" style="margin-left: -3vw !important;">
+                                        <img src="img/sect_5/logo_15.png" alt="">
+                                    </div>
+                                    <div class="width_1"></div>
+                                    <div class="width_59">
+                                        <p class="font_100 txt_left noto_demilight txt_main_color">再生可能エネルギーを通して<br>
+                                            環境保護・保全活動に取り組みます。</p>
+                                    </div>
+                                </div>
+                                <div class="space_1"></div>
+                                <div class="bg_white flex flex_center txt_bpad_2 txt_tpad_2 txt_lpad_2 txt_rpad_2">
+                                    <div class="width_27 flex">
+                                        <img src="img/sect_5/logo_16.png" alt="">
+                                    </div>
+                                    <div class="width_5"></div>
+                                    <div class="width_60">
+                                        <p class="font_100 txt_left line_h_200 noto_demilight txt_main_color">
+                                            太陽光発電のエネルギー単価を下げ、
+                                            人々が安全に快適に過ごせる
+                                            社会を目指します。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Spacing -->
+                <div class="space_5"></div>
+            </div>
+        </section>
+
+        <!-- Section 6 -->
+        <section id="代表挨拶">
+            <!-- PC -->
+            <div class="view_pc">
+                <div class="bg_img">
+                    <img src="img/sect_6/overlay_bg.png" alt="" style="height: 49vw;">
+                    <div class="cont_wrapper_65 t0_l50">
+                        <!-- Spacing -->
+                        <div class="space_5"></div>
+                        <h2 class="txt_left noto_regular font_200 white" style="letter-spacing: 0.3em;"
+                            data-aos="fade-up-right" data-aos-duration="3000">代表挨拶</h2>
+                        <h3 class="txt_left font_75 width_19 txt_bpad_05 white mont_light_italic"
+                            style="border-bottom: 2px solid #fff;" data-aos="fade-up-right" data-aos-duration="3000">
+                            Message from President
+                        </h3>
+                        <!-- Spacing -->
+                        <div class="space_3"></div>
+                        <p class="font_100 white line_h_200 txt_left noto_demilight" data-aos="fade-up-right"
+                            data-aos-duration="3000">
+                            企業はESGやSDGｓ等の持続可能な成長に向けての対応を迫られています。<br>
+                            弊社グループにおいても、『社会課題解決型企業』としての役割をどのようにして持つべきかを模索してまいりました。エネルギー事業、特に電力事業は従来より手掛けてきた通信事業と親和性が高く、この事業への参入は実は長年抱いていた構想でありました。
+                            最近になってローコストで太陽光発電システムを開発できるのではないかと可能性を見出し、ついにスタートラインに立てることができたと感じております。<br>
+                            日本も新たなエネルギー基本計画を取りまとめておりますが、再生エネルギーの大量導入は一筋縄ではいきません。洋上風力発電は導入の本格化が30年代以降と見込まれており、早期拡大が可能な太陽光発電も適地が少ないと言われています。気候変動対策を経済成長や雇用創出につなげる道筋を描くことが必要なのです。
+                        </p>
+                        <!-- Spacing -->
+                        <!-- <div class="space_3"></div> -->
+                        <!-- <div class="txt_tpad_2 txt_bpad_2 txt_lpad_2 txt_rpad_2" style="background-color: #dddddd;"
+                            data-aos="fade-up-right" data-aos-duration="3000">
+                            <p class="font_100 txt_main_color txt_left line_h_200 noto_demilight">
+                                 『日本も夏までに新たなエネルギー基本計画を取りまとめるが、再生エネルギーの大量導入は一筋縄ではいかない。洋上風力発電は導入の本格化が30年代以降と見込まれ、早期拡大が可能な太陽光発電も適地が少ない。気候変動対策を経済成長や雇用創出につなげる道筋を描かなければ産業界の理解は得られず、絵に描いた餅となりかねない。』
+                                 </p>
+                            <p class="font_100 txt_main_color txt_right noto_demilight">（2021年4月23日付日本経済新聞朝刊1面の記事より抜粋）
+                            </p>
+                        </div> -->
+                        <!-- Spacing -->
+                        <div class="space_3"></div>
+                        <p class="font_100 white txt_left line_h_200 noto_demilight" data-aos="fade-up-right"
+                            data-aos-duration="3000">
+                             再生可能エネルギー事業参入は、この国の未来の為の仕事であると考えます。<br>
+                            この仕事は次の世代、そして次の次の世代まで胸を張ってできる仕事であると確信しております。<br>
+                            どうか皆様のご指導を賜りますよう伏してお願い申し上げます。
+
+                        </p>
+
+                        <!-- Spacing -->
+                        <div class="space_5"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- SP -->
+            <div class="view_tabsp">
+                <div
+                    style="background: url(img/sect_6/overlay_bg.png) no-repeat 0 !important; background-size: cover !important;">
+                    <div class="cont_wrapper_65">
+                        <!-- Spacing -->
+                        <div class="space_5"></div>
+                        <h2 class="txt_left noto_regular font_200 white" style="letter-spacing: 0.3em;"
+                            data-aos="fade-up-right" data-aos-duration="3000">代表挨拶</h2>
+                        <h3 class="txt_left font_75 width_42 txt_bpad_05 white mont_light_italic"
+                            style="border-bottom: 2px solid #fff;" data-aos="fade-up-right" data-aos-duration="3000">
+                            Message from President
+                        </h3>
+                        <!-- Spacing -->
+                        <div class="space_3"></div>
+                        <p class="font_100 white line_h_300 txt_left noto_demilight" data-aos="fade-up-right"
+                            data-aos-duration="3000">
+                            企業はESGやSDGｓ等の持続可能な成長に向けての対応を迫られています。<br>
+                            弊社グループにおいても、『社会課題解決型企業』としての役割をどのようにして持つべきかを模索してまいりました。エネルギー事業、特に電力事業は従来より手掛けてきた通信事業と親和性が高く、この事業への参入は実は長年抱いていた構想でありました。<br>
+                            最近になってローコストで太陽光発電システムを開発できるのではないかと可能性を見出し、ついにスタートラインに立てることができたと感じております。<br>
+                            日本も新たなエネルギー基本計画を取りまとめておりますが、再生エネルギーの大量導入は一筋縄ではいきません。洋上風力発電は導入の本格化が30年代以降と見込まれており、早期拡大が可能な太陽光発電も適地が少ないと言われています。気候変動対策を経済成長や雇用創出につなげる道筋を描くことが必要なのです。
+                        </p>
+                        <!-- Spacing -->
+                        <!-- <div class="space_3"></div>
+                        <div class="txt_tpad_2 txt_bpad_2 txt_lpad_2 txt_rpad_2" style="background-color: #dddddd;"
+                            data-aos="fade-up-right" data-aos-duration="3000">
+                            <p class="font_100 txt_main_color txt_left line_h_300 noto_demilight">
+                                 『日本も夏までに新たなエネルギー基本計画を取りまとめるが、再生エネルギーの大量導入は一筋縄ではいかない。洋上風力発電は導入の本格化が30年代以降と見込まれ、早期拡大が可能な太陽光発電も適地が少ない。気候変動対策を経済成長や雇用創出につなげる道筋を描かなければ産業界の理解は得られず、絵に描いた餅となりかねない。』
+                                （2021年4月23日付日本経済新聞朝刊1面の記事より抜粋）
+                                 </p>
+                        </div> -->
+                        <!-- Spacing -->
+                        <div class="space_3"></div>
+                        <p class="font_100 white txt_left line_h_300 noto_demilight" data-aos="fade-up-right"
+                            data-aos-duration="3000">
+                            再生可能エネルギー事業参入は、この国の未来の為の仕事であると考えます。<br>
+                            この仕事は次の世代、そして次の次の世代まで胸を張ってできる仕事であると確信しております。<br>
+                            どうか皆様のご指導を賜りますよう伏してお願い申し上げます。
+                             </p>
+
+                        <!-- Spacing -->
+                        <div class="space_5"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7 -->
+        <section id="会社概要" class="section_7">
+            <!-- PC -->
+            <div class="view_pc">
+                <!-- Spacing -->
+                <div class="space_5"></div>
+                <div class="cont_wrapper_65">
+                    <h2 class="noto_regular font_200 txt_main_color" style="letter-spacing: 0.3em;">会社概要</h2>
+                    <h3 class="font_75 txt_bpad_05 txt_main_color wrapper_20 mont_light_italic"
+                        style="border-bottom: 2px solid #25664a;">
+                        Company Profile
+                    </h3>
+                    <!-- Spacing -->
+                    <div class="space_4"></div>
+                    <!-- Row 1 -->
+                    <div class="flex wrapper_75 txt_bpad_05" style="justify-content: start; align-items: center;">
+                        <div class="flex width_15" style="justify-content: space-between;">
+                            <p class="noto_demilight font_75"> 名 </p>
+                            <p class="noto_demilight font_75"> 称 </p>
+                        </div>
+                        <div class="txt_lpad_3">
+                            <p class="noto_demilight font_75">株式会社オフグリッドラボ</p>
+                        </div>
+                    </div>
+                    <!-- Row 2 -->
+                    <div class="flex wrapper_75 txt_bpad_05" style="justify-content: start;">
+                        <div class="flex width_15" style="justify-content: space-between;">
+                            <p class="noto_demilight font_75"> 設 </p>
+                            <p class="noto_demilight font_75"> 立 </p>
+                        </div>
+
+                        <div class="txt_lpad_3">
+                            <p class="noto_demilight font_75">2021年7月</p>
+                        </div>
+                    </div>
+                    <!-- Row 3 -->
+                    <div class="flex wrapper_75 txt_bpad_05" style="justify-content: start;">
+                        <div class="flex width_15" style="justify-content: space-between;">
+                            <p class="noto_demilight font_75"> 本 </p>
+                            <p class="noto_demilight font_75"> 社 </p>
+                            <p class="noto_demilight font_75"> 所 </p>
+                            <p class="noto_demilight font_75"> 在 </p>
+                            <p class="noto_demilight font_75"> 地 </p>
+                        </div>
+
+                        <div class="txt_lpad_3">
+                            <p class="noto_demilight font_75">〒1 5-0012　東京都港区芝大門２丁目１０番１２号</p>
+                        </div>
+                    </div>
+                    <!-- Row 4 -->
+                    <div class="flex wrapper_75 txt_bpad_05" style="justify-content: start;">
+                        <div class="flex width_15" style="justify-content: space-between;">
+                            <p class="noto_demilight font_75"> 代 </p>
+                            <p class="noto_demilight font_75"> 表 </p>
+                            <p class="noto_demilight font_75"> 者 </p>
+                        </div>
+
+                        <div class="txt_lpad_3">
+                            <p class="noto_demilight font_75">代表取締役社長　猪又 將哲</p>
+                        </div>
+                    </div>
+                    <!-- Row 5 -->
+                    <div class="flex wrapper_75 txt_bpad_05" style="justify-content: start;">
+                        <div class="flex width_15" style="justify-content: space-between;">
+                            <p class="noto_demilight font_75"> 事 </p>
+                            <p class="noto_demilight font_75"> 業 </p>
+                            <p class="noto_demilight font_75"> 内 </p>
+                            <p class="noto_demilight font_75"> 容 </p>
+                        </div>
+
+                        <div class="txt_lpad_3">
+                            <p class="noto_demilight font_75">再生可能エネルギー（電力）事業</p>
+                        </div>
+                    </div>
+                    <!-- Row 6 -->
+                    <div class="flex wrapper_75 txt_bpad_05" style="justify-content: start;">
+                        <div class="flex width_15" style="justify-content: space-between;">
+                            <p class="noto_demilight font_75"> 資 </p>
+                            <p class="noto_demilight font_75"> 本 </p>
+                            <p class="noto_demilight font_75"> 金 </p>
+                        </div>
+
+                        <div class="txt_lpad_3">
+                            <p class="noto_demilight font_75">1000万円</p>
+                        </div>
+                    </div>
+                    <!-- Row 7 -->
+                    <div class="flex wrapper_75 txt_bpad_05" style="justify-content: start;">
+                        <div class="flex width_15" style="justify-content: space-between;">
+                            <p class="noto_demilight font_75"> 関 </p>
+                            <p class="noto_demilight font_75"> 連 </p>
+                            <p class="noto_demilight font_75"> 会 </p>
+                            <p class="noto_demilight font_75"> 社 </p>
+                        </div>
+
+                        <div class="txt_lpad_3">
+                            <p class="noto_demilight font_75">株式会社ファイバーゲート（東証一部　証券コード9450）</p>
+                        </div>
+                    </div>
+                    <!-- Row 8 -->
+                    <div class="flex wrapper_75 txt_bpad_05" style="justify-content: start;">
+                        <div class="flex width_15" style="justify-content: space-between;">
+                        </div>
+
+                        <div class="txt_lpad_3">
+                            <p class="noto_demilight font_75">飛博網通科技股份有限公司【英語表記：Fibergate Taiwan Inc.】</p>
+                        </div>
+                    </div>
+                    <!-- Row 9 -->
+                    <div class="flex wrapper_75 txt_bpad_05" style="justify-content: start;">
+                        <div class="flex width_15" style="justify-content: space-between;">
+                        </div>
+
+                        <div class="txt_lpad_3">
+                            <p class="noto_demilight font_75">株式会社NOIS</p>
+                        </div>
+                    </div>
+                    <!-- Row 10 -->
+                    <div class="flex wrapper_75 txt_bpad_05" style="justify-content: start;">
+                        <div class="flex width_15" style="justify-content: space-between;">
+                        </div>
+
+                        <div class="txt_lpad_3">
+                            <p class="noto_demilight font_75">株式会社FG-Lab</p>
+                        </div>
+                    </div>
+                    <!-- Row 11 -->
+                    <div class="flex wrapper_75 txt_bpad_05" style="justify-content: start;">
+                        <div class="flex width_15" style="justify-content: space-between;">
+                        </div>
+
+                        <div class="txt_lpad_3">
+                            <p class="noto_demilight font_75">株式会社FGスマートアセット</p>
+                        </div>
+                    </div>
+                    <!-- Spacing -->
+                    <div class="space_3"></div>
+                    <!-- Map -->
+                    <div class="">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.940941367269!2d139.75096541525815!3d35.653826680200744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bea5236d6e1%3A0x4d7145e07950eb19!2z44ix44OV44Kh44Kk44OQ44O844Ky44O844OI!5e0!3m2!1sen!2sph!4v1623378641325!5m2!1sen!2sph"
+                            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+
+                </div>
+                <!-- Spacing -->
+                <div class="space_3"></div>
+            </div>
+            <!-- SP -->
+            <div class="view_tabsp">
+                <!-- Spacing -->
+                <div class="space_5"></div>
+                <div class="cont_wrapper_65">
+                    <h2 class="noto_regular font_200 txt_main_color" style="letter-spacing: 0.3em;">会社概要</h2>
+                    <h3 class="font_75 txt_bpad_05 txt_main_color wrapper_45 mont_light_italic"
+                        style="border-bottom: 2px solid #25664a;">
+                        Company Profile
+                    </h3>
+                    <!-- Spacing -->
+                    <div class="space_4"></div>
+                    <!-- Row 1 -->
+                    <div class="wrapper_100 txt_bpad_05" style="justify-content: start; align-items: center;">
+                        <div style="justify-content: space-between;">
+                            <p class="noto_demilight font_75 txt_left txt_lpad_1 txt_tpad_1 txt_bpad_1 txt_rpad_1"
+                                style="background-color: #e7e7e7;"> 名 称 </p>
+                        </div>
+                        <div class="width_100">
+                            <p class="noto_demilight font_75 txt_left txt_lpad_1 txt_tpad_1 txt_bpad_1 txt_rpad_1">
+                                株式会社オフグリッドラボ</p>
+                        </div>
+                    </div>
+                    <!-- Row 2 -->
+                    <div class="wrapper_100 txt_bpad_05" style="justify-content: start;">
+                        <div class="width_100" style="justify-content: space-between;">
+                            <p class="noto_demilight font_75 txt_left txt_lpad_1 txt_tpad_1 txt_bpad_1 txt_rpad_1"
+                                style="background-color: #e7e7e7;"> 設 立 </p>
+                        </div>
+                        <div class="width_100">
+                            <p class="noto_demilight font_75 txt_left txt_lpad_1 txt_tpad_1 txt_bpad_1 txt_rpad_1">
+                                2021年7月</p>
+                        </div>
+                    </div>
+                    <!-- Row 3 -->
+                    <div class="wrapper_100 txt_bpad_05" style="justify-content: start;">
+                        <div class="width_100" style="justify-content: space-between;">
+                            <p class="noto_demilight font_75 txt_left txt_lpad_1 txt_tpad_1 txt_bpad_1 txt_rpad_1"
+                                style="background-color: #e7e7e7;"> 本 社 所 在 地
+                            </p>
+                        </div>
+
+                        <div class="width_100">
+                            <p class="noto_demilight font_75 txt_left txt_lpad_1 txt_tpad_1 txt_bpad_1 txt_rpad_1">〒1
+                                5-0012　東京都港区芝大門２丁目１０番１２号</p>
+                        </div>
+                    </div>
+                    <!-- Row 4 -->
+                    <div class="flex wrapper_100 txt_bpad_05" style="justify-content: start;">
+                        <div class="width_100" style="justify-content: space-between;">
+                            <p class="noto_demilight font_75 txt_left txt_lpad_1 txt_tpad_1 txt_bpad_1 txt_rpad_1"
+                                style="background-color: #e7e7e7;"> 代 表 者</p>
+                        </div>
+
+                        <div class="width_100">
+                            <p class="noto_demilight font_75 txt_left txt_lpad_1 txt_tpad_1 txt_bpad_1 txt_rpad_1">
+                                代表取締役社長　猪又 將哲</p>
+                        </div>
+                    </div>
+                    <!-- Row 5 -->
+                    <div class="wrapper_100 txt_bpad_05" style="justify-content: start;">
+                        <div class="width_100" style="justify-content: space-between;">
+                            <p class="noto_demilight font_75 txt_left txt_lpad_1 txt_tpad_1 txt_bpad_1 txt_rpad_1"
+                                style="background-color: #e7e7e7;"> 事 業 内 容 </p>
+                        </div>
+
+                        <div class="width_100">
+                            <p class="noto_demilight font_75 txt_left txt_lpad_1 txt_tpad_1 txt_bpad_1 txt_rpad_1">
+                                再生可能エネルギー（電力）事業</p>
+                        </div>
+                    </div>
+                    <!-- Row 6 -->
+                    <div class="flex wrapper_100 txt_bpad_05" style="justify-content: start;">
+                        <div class="width_100" style="justify-content: space-between;">
+                            <p class="noto_demilight font_75 txt_left txt_lpad_1 txt_tpad_1 txt_bpad_1 txt_rpad_1"
+                                style="background-color: #e7e7e7;"> 資 本 金 </p>
+                        </div>
+
+                        <div class="width_100">
+                            <p class="noto_demilight font_75 txt_left txt_lpad_1 txt_tpad_1 txt_bpad_1 txt_rpad_1">
+                                1000万円</p>
+                        </div>
+                    </div>
+                    <!-- Row 7 -->
+                    <div class="wrapper_100 txt_bpad_05" style="justify-content: start;">
+                        <div class="width_100" style="justify-content: space-between;">
+                            <p class="noto_demilight font_75 txt_left txt_lpad_1 txt_tpad_1 txt_bpad_1 txt_rpad_1"
+                                style="background-color: #e7e7e7;"> 関 連 会 社 </p>
+                        </div>
+
+                        <div class="width_100">
+                            <p class="noto_demilight font_75 txt_left txt_lpad_1">
+                                株式会社ファイバーゲート（東証一部　証券コード9450）</p>
+                        </div>
+                    </div>
+                    <!-- Row 8 -->
+                    <div class="wrapper_100 txt_bpad_05" style="justify-content: start;">
+                        <div class="width_15" style="justify-content: space-between;">
+                        </div>
+
+                        <div class="width_100">
+                            <p class="noto_demilight font_75 txt_left txt_lpad_1">
+                                飛博網通科技股份有限公司</p>
+                        </div>
+                    </div>
+                    <div class="wrapper_100 txt_bpad_05" style="justify-content: start;">
+                        <div class="width_15" style="justify-content: space-between;">
+                        </div>
+                        <div class="width_100">
+                            <p class="noto_demilight font_75 txt_left txt_lpad_1">【英語表記：Fibergate Taiwan Inc.】</p>
+                        </div>
+                    </div>
+                    <!-- Row 9 -->
+                    <div class="flex wrapper_100 txt_bpad_05" style="justify-content: start;">
+                        <div class="flex" style="justify-content: space-between;">
+                        </div>
+
+                        <div class="width_100">
+                            <p class="noto_demilight font_75 txt_left txt_lpad_1">株式会社NOIS</p>
+                        </div>
+                    </div>
+                    <!-- Row 10 -->
+                    <div class="flex wrapper_100 txt_bpad_05" style="justify-content: start;">
+                        <div class="flex" style="justify-content: space-between;">
+                        </div>
+
+                        <div class="width_100">
+                            <p class="noto_demilight font_75 txt_left txt_lpad_1">株式会社FG-Lab</p>
+                        </div>
+                    </div>
+                    <!-- Row 11 -->
+                    <div class="flex wrapper_100 txt_bpad_05" style="justify-content: start;">
+                        <div class="flex" style="justify-content: space-between;">
+                        </div>
+
+                        <div class="width_100">
+                            <p class="noto_demilight font_75 txt_left txt_lpad_1">株式会社FGスマートアセット</p>
+                        </div>
+                    </div>
+                    <!-- Spacing -->
+                    <div class="space_3"></div>
+                    <!-- Map -->
+                    <div class="">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.940941367269!2d139.75096541525815!3d35.653826680200744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bea5236d6e1%3A0x4d7145e07950eb19!2z44ix44OV44Kh44Kk44OQ44O844Ky44O844OI!5e0!3m2!1sen!2sph!4v1623378641325!5m2!1sen!2sph"
+                            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+
+                </div>
+                <!-- Spacing -->
+                <div class="space_3"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="txt_tpad_1 txt_bpad_1" style="background-color: #25664a;">
+            <p class="font_100 white noto_demilight">Copyright (C) 2021 OffGrid-Lab all rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        $("html").easeScroll();
+
+        // Navigation
+        $('#toggle').click(function () {
+            $(this).toggleClass('active');
+            $('#overlay').toggleClass('open');
+        });
+
+        function close_menu() {
+            $('#toggle').toggleClass('active');
+            $('#overlay').toggleClass('open');
+        }
+    </script>
+
+    <script>
+        $(function () {
+            $('a[href*=#]:not([href=#])').click(function () {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location
+                    .hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $("html").easeScroll();
+    </script>
+
+    <!-- Fade Animation -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+
+</body>
+
+</html>
